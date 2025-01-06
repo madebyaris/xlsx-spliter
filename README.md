@@ -2,6 +2,10 @@
 
 A Node.js application that efficiently splits large Excel (XLSX) files into smaller chunks while maintaining the original structure and formatting. This tool is particularly useful when dealing with Excel files that are too large to handle in memory.
 
+I tested using 980K rows and it can split in 3-4 minutes for 100K rows per file, and without any issues.
+
+If you wanted to use it on Node server, I suggest to use xlsx-stream-reader and try to load/stream via file, using in-memory buffer may lead an issue if the file is too large. 
+
 ## Features
 
 - Split large XLSX files into smaller chunks
@@ -22,7 +26,7 @@ Before you begin, ensure you have the following installed:
 
 1. Clone or download this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/madebyaris/xlsx-spliter.git
 # or download and extract the ZIP file
 ```
 
