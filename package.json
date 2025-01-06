@@ -1,0 +1,15 @@
+{
+  "name": "xlsx-splitter",
+  "version": "1.0.0",
+  "description": "A Node.js application to split XLSX files into smaller parts",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5",
+    "xlsx-stream-reader": "^1.1.1",
+    "yargs": "^17.7.2"
+  }
+}
